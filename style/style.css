@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button{
+    background: hsl(0, 0%, 95%);
+    margin-top: 85px;
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background:transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.b1{
+    color: hsl(31, 77%, 52%);
+}
+
+.b2{
+    color: hsl(184, 100%, 22%);
+}
+
+.b3{
+    color: hsl(179, 100%, 13%);
+}
+
+.ctn-p{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-n{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ctn-n p{
+    width: 210px;
+}
+
+.ctn-n img{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn-n h1{
+    margin-bottom: 30px;
+}
+
+.ctn--s_sedans, .ctn--s_suvs, .ctn--s_luxury{
+    width: 300px;
+    height: 470px;
+}
+
+.ctn--s_sedans{
+    background: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.ctn--s_suvs{
+    background: hsl(184, 100%, 22%);
+}
+
+.ctn--s_luxury{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.ctn--sedans_text, .ctn--suvs_text, .ctn--luxury_text{
+    width: 100%;
+    margin-left: 40px;
+}
+
+/**QUERIES**/
+
+@media screen and (max-width: 768px){
+    .ctn-n{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .ctn--s_luxury{
+        border-radius: 0 0 5px 5px;
+    }
+    .ctn--s_sedans{
+        border-radius: 5px 5px 0 0;
+    }
+    .ctn--s_sedans, .ctn--s_suvs, .ctn--s_luxury{
+        width: 305px;
+        height: 400px;
+    }
+    .ctn-n p{
+        width: 225px;
+    }
+    .ctn-n h1{
+        margin-bottom: 15px;
+    }
+    button{
+        margin-top: 20px;
+    }
+}
+
+
